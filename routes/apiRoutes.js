@@ -1,5 +1,4 @@
 const app = require("express").Router();
-// const { app } = require("express");
 const Workout = require("../models/workouts");
 
 app.post("/api/workouts", (req, res) => {
