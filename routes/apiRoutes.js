@@ -1,7 +1,7 @@
 const app = require("express").Router();
 const Workout = require("../models/workouts");
 
-app.post("/api/workouts", (req, res) => {
+app.get("/api/workouts", (req, res) => {
     Workout.find({})
     .then((dbWorkout) => {
         res.json(dbWorkout);
